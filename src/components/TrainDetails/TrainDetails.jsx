@@ -31,7 +31,7 @@ function TrainDetails() {
 
 
 
-    const initialDate = new Date('Wed Nov 15 2023 00:00:00 GMT+0530');
+    const initialDate = new Date();
     const [TravelDate, setTravelDate] = useState(initialDate);
     const [MemberValue, setMemberValue] = useState({
         adult: 1,
