@@ -1,11 +1,15 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
-import { AuthContext } from '../../App'
+import { AuthContext, ButtonContext } from '../../App'
 import axios from 'axios'
 import { getHeaderWithProjectId } from '../../Authenticaltion/utils/service'
 import "./railwaypage.css"
+import ScrollNavBar from '../../../ScrollNavBar/ScrollNavBar'
 
 function TrainDetailsSingle() {
+
+
+    const {buttonState, setButtonState} = useContext(ButtonContext);
 
     const [trainsingle, setTrainSingle] = useState(null);
 
@@ -30,7 +34,12 @@ function TrainDetailsSingle() {
     const navigate = useNavigate()
 
     function handleButtonOnClickTrainPayment() {
-        navigate(`../paymenttrain`)
+        if (!isLoggedin) {
+            setButtonState(true)
+        }else{
+            navigate(`../paymenttrain`)
+
+        }
     }
 
     const params = useParams()
@@ -54,21 +63,25 @@ function TrainDetailsSingle() {
         console.log(trainDetails, "this is train details");
     }, []);
 
+
+    
+
     
 
     return (
 
         <>
+            <ScrollNavBar />
             <div className='searchPage-hader-container'>
-                <h2 className='' style={{color: "rgb(255, 255, 255)",marginLeft: "10%", paddingBottom: "1rem"}}>Select Travellers</h2>
+                <h2 className='' style={{color: "rgb(255, 255, 255)",marginLeft: "10%", paddingBottom: "1rem"}}>Booking</h2>
             </div>
 
             <div class="parent-train-single-page">
                     <div class="trdInfo">
                         <div class="trdDetails makeFlex column">
                             <div class="appendBottom30">
-                                <div class="makeFlex end appendBottom5 spaceBetween">
-                                    <div class=" column appendRight50">
+                                <div id='trainmobileres' class="makeFlex end appendBottom5 spaceBetween">
+                                    <div id='trdDetailsabc' class=" column appendRight50">
                                         <h3 class="font22 latoBlack appendBottom5">{trainsingle && trainsingle.trainType}</h3>
                                         <p><span class="font12 lightGreyText">#12259<span class="appendLeft10">|</span></span><span
                                         class="font12 appendLeft10"><span class="lightGreyText">Departs on:</span>
@@ -82,7 +95,7 @@ function TrainDetailsSingle() {
                                             <p class="appendBottom10"><span class="latoBlack">{trainsingle?.departureTime}</span><span
                                                 class="latoBlack">,
                                             </span><span class="lightGreyText">16 Nov</span></p>
-                                            <p class="font12 darkGreyText">Kolkata Sealdah Railway Station (SDAH)</p>
+                                            <p class="font12 darkGreyText">{trainsingle?.source} (SDAH)</p>
                                         </div><span class="bdrTop"></span>
                                         <div class="makeFlex column appendRight20">
                                             <p class="font12 latoBold appendBottom20">12<span class="lightGreyText"> hrs
@@ -92,13 +105,19 @@ function TrainDetailsSingle() {
                                             <p class="appendBottom10"><span class="latoBlack">{trainsingle?.arrivalTime}</span><span
                                                 class="latoBlack">,
                                             </span><span class="lightGreyText">17 Nov</span></p>
-                                            <p class="font12 darkGreyText appendBottom10">Kanpur Central Railway Station (CNB)</p>
+                                            <p class="font12 darkGreyText appendBottom10">{trainsingle?.destination} (CNB)</p>
                                         </div>
                                     </div>
 
+                                    <div className='trdDetails-auth'>
+                                        <div>Fare : {trainsingle?.fare} INR</div>
+                                        <button onClick={handleButtonOnClickTrainPayment}>Book Now</button>
+                                    </div>
+
+
                                 </div>
                             </div>
-                            <div class="makeFlex appendBottom50 makeRelative">
+                            <div id='trdDetails' class="makeFlex appendBottom50 makeRelative">
                                 <div class="makeFlex column appendRight40">
                                     <div class="makeFlex column">
                                         <h3 class="latoBold font14 darkGreyText appendBottom10">Availability Status</h3>
@@ -119,16 +138,15 @@ function TrainDetailsSingle() {
                                             class="latoRegular font14 darkGreyText"> {trainsingle?.source} (SDAH) - {trainsingle?.departureTime} (16 Nov)
                                         </span><span class="font12 latoRegular appendLeft130 deepskyBlueText">Change</span><span
                                             class="arrow arrow-down-wide"></span></p>
-                                        <ul class="quotaBox  makeAbsolute textLeft font14 darkGreyText">
-                                            <li class="latoBold makeFlex font16">SEALDAH (SDAH) - 5:00 PM (16 Nov)</li>
-                                            <li class="">DHANBAD JN (DHN) - 8:35 PM (16 Nov)</li>
-                                            <li class="">DD UPADHYAYA JN (DDU) - 1:35 AM (17 Nov)</li>
-                                        </ul>
+                                        
+                                        <div>
+                                            Fare: {trainsingle?.fare} INR
+                                        </div>
                                     </div>
                                     <p class="shiftFiller font12"></p>
                                 </div>
                                 <div onClick={handleButtonOnClickTrainPayment} class="btnTosinglePage">
-                                    <h3>Book Now</h3>
+                                    <h3 >Book Now</h3>
                                 </div>
 
 
