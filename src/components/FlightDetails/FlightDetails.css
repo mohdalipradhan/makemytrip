@@ -1,0 +1,519 @@
+.flight-booking-details-container{
+      display: grid;
+      grid-template-columns: 2fr 2fr 1fr 1fr;
+  
+}
+
+.booking-details-container{
+      border: 1px solid #e7e7e7;
+      border-radius: 10px;
+      margin: 1rem 0;
+      width: 100%;
+      z-index: 5!important;
+  
+}
+
+.from-div-input{
+      background: none;
+      border: none;
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 30px;
+      outline: none;
+      text-transform: capitalize;
+      width: 100%;
+  
+}
+
+.from-span{
+      max-width: 300px;
+      overflow: hidden;
+      padding-bottom: 8px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+  
+}
+
+
+.booking-inputBox{
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 10px 16px;
+  
+}
+
+.span-city-name{
+      max-width: 300px;
+      overflow: hidden;
+      padding-bottom: 8px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+  
+}
+
+.dropdown{
+   max-width: 300px;
+      overflow: hidden;
+      padding-bottom: 8px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+}
+
+
+.dropdown:after {
+   border: solid #008cff;
+   border-width: 0 2px 2px 0;
+   content: "";
+   display: inline-block;
+   margin: 3px 0 0 8px;
+   padding: 3px;
+   transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+   transition: all .3s ease-in-out;
+   vertical-align: top;
+}
+
+.calendarOnOfFlight {
+   width: 300px !important;
+   max-width: none  !important;
+   position: absolute;
+   left: 0px;
+   top: 40px;
+   border: 1px solid gray;
+   border-radius: 5px;
+   z-index: 60;
+}
+
+
+.booking-inputBox-last{
+   cursor: pointer;
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   padding: 10px 16px;
+   position: relative;
+
+}
+
+.booking-inputBox:hover {
+   background: #eaf5ff;
+   height: 110px;
+}
+
+.booking-inputBox-last:hover {
+   background: #eaf5ff;
+   height: 110px;
+}
+
+.flightadult{
+   position: absolute;
+   bottom: 78px;
+}
+
+.shortYear{
+   font-size: 20px;
+}
+
+.shortYear:before{
+   content: "'";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* I will see to this later */
+.ticket-type {
+   display: flex;
+   gap: 25px;
+   font-weight: 400;
+}
+
+
+
+.ticket-type span {
+   margin-top: 50px;
+   font-size: 14px;
+
+}
+
+.Details {
+   padding: 20px;
+}
+
+.selected-ticket-type {
+   display: inline-flex;
+   flex-direction: row;
+   background-color: rgb(208, 208, 208);
+   border-radius: 30px;
+}
+
+.righttick {
+   align-items: center;
+   width: 20px;
+}
+
+.flight-search {
+   display: flex;
+   justify-content: space-around;
+   gap: 0px;
+   border: 1px solid rgb(202, 202, 202);
+   margin-top: 20px;
+   padding: 10px;
+   border-radius: 10px;
+}
+
+.something {
+   color: black;
+   height: 40px;
+   border: none;
+   font-weight: bold;
+   text-transform: capitalize;
+
+}
+
+.modal-flight-for {
+   background-color: #fff;
+   border-radius: .3rem;
+   box-shadow: 0 0 10px 2px #0003;
+   height: 200px;
+   max-width: 300px;
+   overflow-y: scroll;
+   position: absolute;
+   top: 2.4rem;
+   width: 100%;
+   z-index: 4;
+
+}
+
+.flight h1 {
+   margin-top: 14px;
+
+}
+
+.flight h1 ::placeholder {
+   color: black;
+   font-weight: bolder;
+   font-size: x-large;
+}
+
+.something {
+   font-size: large;
+}
+
+.flight {
+   display: flex;
+   border-left: 1px solid black;
+   flex-direction: column;
+   padding-left: 10px;
+   border: 1px solid #898686;
+   border-radius: 8px;
+}
+
+.flight-for {
+   position: relative;
+   bottom: 3px;
+   display: flex;
+   border-left: 1px solid black;
+   flex-direction: column;
+   padding-left: 10px;
+   border: 1px solid #898686;
+   border-radius: 8px;
+}
+
+.flight-to {
+   position: relative;
+   bottom: 3px;
+   display: flex;
+   border-left: 1px solid black;
+   flex-direction: column;
+   padding-left: 10px;
+   border: 1px solid #898686;
+   border-radius: 8px;
+}
+
+.modal-flight-for-two {
+   position: relative;
+   bottom: 3px;
+   display: flex;
+   border-left: 1px solid black;
+   flex-direction: column;
+   padding-left: 10px;
+}
+
+.searchBtn {
+   display: flex;
+   width: 216px;
+   height: 44px;
+   background: linear-gradient(to right, #3fa2ff, #3f00f6);
+   color: #fff;
+   font-size: 28px;
+   text-align: center;
+   border-radius: 35px;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   top: 314px;
+   left: 376px;
+}
+
+.searchParent {
+   display: flex;
+   justify-content: center;
+}
+
+.radioFlight {
+   display: flex;
+   margin-top: 54px;
+}
+
+
+
+
+.ComponentUni {
+   background-color: #fff;
+   width: 1200px;
+   height: 552px;
+}
+
+.nav-link {
+   text-decoration: none;
+}
+
+.footerfix {
+   display: none;
+   position: absolute;
+   top: 1000px;
+}
+
+
+
+.calendarCrossOfTwoFlight {
+   position: absolute;
+   background-color: #3F22F7;
+   padding: 10px;
+   top: 444px;
+   right: 150px;
+   cursor: pointer;
+   border: 1px solid black;
+   border-radius: 10px;
+}
+
+.modal-flight-for-input {
+   align-items: center;
+   background-color: #fff;
+   border-bottom: 1px solid #dedddd;
+   display: flex;
+   padding: 0.4rem 0.4rem 0.4rem 1rem;
+   position: -webkit-sticky;
+   position: sticky;
+   gap: 5px;
+   top: 0;
+}
+
+.modal-flight-for-inputTwo {}
+
+.search-icon-img {
+   height: 20px;
+   scale: 2;
+   width: 20px;
+
+}
+
+.modal-flight-for-ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+
+}
+
+.modal-flight-for-li {
+   padding: .4rem 0 .4rem 1rem;
+   display: flex;
+   gap: 4px;
+
+   &:hover {
+      background-color: #f5f5f5;
+      cursor: pointer;
+   }
+}
+
+.modal-flight-for-div {
+   float: left;
+   width: 18%;
+}
+
+.modal-flight-for-span-two {
+   text-transform: capitalize;
+}
+
+.modal-flight-for-span {
+   background-color: #034a85;
+   border-radius: .3rem;
+   color: #fff;
+   font-size: 14px;
+   margin-right: 1rem;
+   padding: 0 .3rem;
+   text-align: center;
+
+}
+
+@media only screen and (max-width: 600px) {
+   .flight-search {
+      display: flex;
+      flex-direction: row;
+      height: auto;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 22px;
+      border: 1px solid rgb(202, 202, 202);
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 10px;
+   }
+
+   .flight-booking-details-container {
+      display: flex;
+      flex-direction: column;
+      grid-template-columns: 2fr 2fr 1fr 1fr;
+  }
+
+   .calendarCrossOfTwoFlight {
+      position: absolute;
+      background-color: #3F22F7;
+      padding: 10px;
+      top: 609px;
+      right: 19px;
+      cursor: pointer;
+      border: 1px solid black;
+      border-radius: 10px;
+   }
+
+
+
+   .ComponentUni {
+      background-color: #FFFFFF;
+      width: 1200px;
+      height: auto;
+      padding: 25px 40px 40px;
+      margin-top: 25px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+   }
+
+   .searchBtn {
+      display: flex;
+      width: 216px;
+      height: 46px;
+      background: linear-gradient(to right, #3fa2ff, #3f00f6);
+      color: #fff;
+      font-size: 28px;
+      text-align: center;
+      border-radius: 35px;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 610px;
+      left: 95px;
+  }
+
+   .calendarOnOfFlight {
+      position: absolute;
+      right: 22px;
+   }
+
+
+
+
+
+
+
+}
+
+
+
+
+.radio-class-abc{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+  
+}

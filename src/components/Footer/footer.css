@@ -1,0 +1,64 @@
+.footer-wrapper {
+    position: relative;
+    bottom: 0;
+    height: 10rem;
+    width: 100%;
+    background: #000;
+    margin-top: 1.75rem;
+}
+
+.footer {
+    color: var(--color-btn-primary-text);
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .left .socials {
+    font-size: 2rem;
+}
+
+.footer .left .socials a {
+    color: white;
+    margin: 0 1rem;
+}
+
+.footer .right {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+
+.footer .right div:last-child {
+    align-self: flex-end;
+}
+
+.printWaterMark {
+    color: rgba(0, 0, 0, 0.033);
+    position: fixed;
+    height: 100vh;
+    top: 10%;
+    left: 35%;
+    font-size: 10rem;
+    font-weight: 900;
+    z-index: 9999999999999;
+    transform: rotate(-45deg);
+    pointer-events: none;
+    display: none;
+}

@@ -1,0 +1,47 @@
+.calendarOfTrainTwo {
+    position: absolute;
+}
+
+.calendarCrossOfTwo-train {
+    position: absolute;
+    padding: 10px;
+    background: #4C70F7;
+    border-radius: 3px;
+    top: 440px;
+    right: 100px;
+}
+
+.something {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.findMemberssomething {
+    position: absolute;
+}
+
+.flight {
+    cursor: pointer;
+}
+
+.requiredradio {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .flight {
+        border: 1px solid #d6bfbf;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .calendarCrossOfTwo-train {
+        position: absolute;
+        padding: 10px;
+        background: #4C70F7;
+        border-radius: 3px;
+        top: 605px;
+        right: 18px;
+    }
+}

@@ -1,0 +1,134 @@
+.MmtParent {
+    border-radius: 8px;
+    align-items: center;
+    display: flex;
+    background-color: #fff;
+    width: 960.7px;
+    height: 66px;
+    padding: 8px 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    z-index: 11;
+    position: relative;
+    bottom: 25px;
+    justify-content: center;
+    border: 1px solid gray;
+}
+
+.MmtParentForMiddle {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, rgb(54 51 112) 0%, rgba(6, 20, 36, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+.upcomingPos {
+    background: linear-gradient(45deg,#ec2127,#e37622);
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    font-size: 8px!important;
+    font-weight: 500;
+    left: 50%;
+    padding: 3px 6px;
+    position: absolute;
+    top: -14px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.componentsStyle {
+    display: flex;
+    gap: 75px;
+}
+
+.flightShow {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .mobDontShow {
+        display: none;
+    }
+
+    .componentsStyle {
+        display: flex;
+        gap: 42px;
+    }
+
+}
+
+.icon-no-link {
+    list-style: none;
+}
+
+.single-icon-component {
+    display: flex;
+    flex-direction: row;
+}
+
+.single-single-component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.single-single-component li {
+    position: relative;
+    top: 5px;
+
+
+}
+
+.textdecon {
+    text-decoration: none;
+
+}
+
+.textdecon.active {
+    color: red;
+}
+
+.chTravelInsurance {
+    background-position: -221px -86px;
+    height: 29px;
+    width: 25px;
+    background-size: 260px 400px;
+
+}
+
+
+
+.chSpritea {
+    background-image: url(//imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/B2CHeaderSprite.png)!important;
+    background-repeat: no-repeat;
+    background-size: 156px 240px;
+    background-size: 260px 400px;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .MmtParentForMiddle {
+        width: 100%;
+    }
+
+    .MmtParent {
+        width: 70%;
+    }
+
+
+
+    .NoShow {
+        display: none;
+    }
+
+
+
+}

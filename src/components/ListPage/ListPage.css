@@ -1,0 +1,173 @@
+.listContainer {
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: 20px;
+    position: relative;
+    bottom: 120px;
+
+
+
+}
+
+
+#sortByCheapest[type='checkbox'] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+  
+
+
+.listWrapper {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    gap: 20px;
+}
+
+.listSearch {
+    flex: 1;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
+    height: max-content;
+}
+
+.lsTitle {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.lsItem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.lsItem>label {
+    font-size: 12px;
+
+}
+
+.lsItem>input {
+    height: 30px;
+    border: none;
+    padding: 5px;
+}
+
+.lsItem>span {
+    height: 30px;
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    align-content: center;
+    cursor: pointer;
+}
+
+
+
+.listResult {
+    flex: 3;
+    position: relative;
+    bottom: 39px;
+}
+
+.lsOptionItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 12px;
+}
+
+.lsOptionInput {
+    width: 50px;
+}
+
+.lsOptions {
+    padding: 10px;
+}
+
+.listSearch>button {
+    padding: 10px;
+    background-color: #0071c2;
+    color: white;
+    border: none;
+    width: 100%;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.bluish {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 15%, rgba(9, 9, 121, 1) 52%, rgba(0, 212, 255, 1) 100%);
+    height: 250px;
+}
+
+.listResult>h1 {
+    color: White;
+}
+
+.btnsortab {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    color: wheat;
+    top: 107px;
+    gap: 29px;
+}
+
+.firstab {
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+}
+
+.secondab {
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .listWrapper {
+        width: 100%;
+        max-width: 1024px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .listSearch {
+        flex: 1 1;
+        background-color: lightblue;
+        padding: 10px;
+        border-radius: 10px;
+        position: relative;
+        top: -25px;
+        height: -webkit-max-content;
+        height: max-content;
+    }
+
+    #color-change-black {
+        color: black;
+        text-align: center;
+    }
+
+    .listResult {
+        display: flex;
+        flex-direction: column;
+        flex: 3 1;
+        position: relative;
+        bottom: 39px;
+        align-items: center;
+    }
+}

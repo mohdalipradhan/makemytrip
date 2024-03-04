@@ -1,0 +1,308 @@
+.parent-container-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 80px;
+    padding: -9px 0 12px;
+    background-color: #FFFFFF;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.navbar.hidden {
+    transform: translateY(-100%);
+}
+
+.child1-container-navbar {
+    display: flex;
+    width: 1200px;
+}
+
+.logo-container {
+    margin-right: 25px;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    margin-top: -19px;
+}
+
+.logo-navlink {
+    width: 113px;
+    height: 36px;
+    display: inline-block;
+
+}
+
+.nav-flex-container {
+    flex: 2;
+}
+
+.right-side {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.right-side-li {
+    position: relative;
+    line-height: 12px;
+}
+
+.right-side-span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    padding: 6px;
+    /* font-size: 10px; */
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #ace143, #219393);
+}
+
+.unorder-nav-flex {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-list-ai {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.headerIconWrapper {
+    height: 24px;
+    width: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+
+    background-image: url(//imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/B2CHeaderSprite.png) !important;
+    background-repeat: no-repeat;
+    background-size: 156px 240px;
+
+}
+
+.headerIconTextAllignment {
+    font-size: calc(var(--font-scale, 1) * 12px);
+    font-weight: 400;
+    text-align: center;
+    line-height: normal;
+    color: #4a4a4a;
+}
+
+.chHotels {
+    width: 21.5px;
+    height: 24px;
+    background-position: -37.5px 0px;
+}
+
+.chHomestays {
+    width: 26.4px;
+    height: 22px;
+    background-position: -34px -50px;
+}
+
+.chHolidays {
+    width: 25px;
+    height: 20px;
+    background-position: -65px -2.2px;
+}
+
+.chTrains {
+    width: 28px;
+    height: 22px;
+    background-position: -94px -1.8px;
+}
+
+.chCabs {
+    width: 23.4px;
+    height: 22.2px;
+    background-position: -66px -49px;
+}
+
+.nav-link-nav {
+    /* text-align: center; */
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: min-content;
+}
+
+.login-box-thesis {
+    font-size: 12px;
+}
+
+.right-side-li-div {
+    display: flex;
+    align-items: center;
+    margin-top: -12px;
+    cursor: pointer;
+}
+
+.div-nav-nav-open {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.modalRightSide-menu {
+    width: 348px;
+    height: auto;
+    -webkit-animation: fadeInDown 0.3s linear;
+    animation: fadeInDown 0.3s linear;
+    background: #fcfcfc;
+    border-radius: 4px;
+    position: absolute;
+    top: 36px;
+    right: 0;
+    z-index: 35;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.paragraph-css-menu {
+    font-size: 12px;
+    line-height: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu-child--scroll-1 {
+    display: flex;
+    color: var(--color-primary, #008cff);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: all 0.2s linear;
+
+    & :hover {
+        background-color: rgb(241, 237, 228);
+    }
+}
+
+.icon-menu-a {
+    background-image: url(//imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/landingSprite@22x.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: 200px 700px;
+    font-size: 0px;
+    flex-shrink: 0;
+}
+
+.userItemMyProfile {
+    width: 23px;
+    height: 21px;
+    background-position: -112px -197px;
+}
+
+.menu-content-nav {
+    margin-top: -12px;
+    margin-left: 20px;
+}
+
+.latoBold {
+    font-weight: 700;
+}
+
+.p-class-second-child-menu {
+    color: #000000;
+    line-height: 16px;
+    font-size: 12px;
+    margin-top: -6px;
+}
+
+.userItemMyTrips {
+    width: 24px;
+    height: 22px;
+    background-position: -111px -166px;
+}
+
+.menu-child-3-span {
+    color: red;
+    margin-top: 3px;
+}
+
+.parent-login-scroll-container {
+    cursor: pointer;
+    font-size: calc(var(--font-scale, 1) * 12px);
+    line-height: 12px;
+    position: relative;
+}
+
+.child1-div-login-scroll-container {
+    display: flex;
+}
+
+.child2-img-scroll-container {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    padding: 6px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #ace143, #219393);
+    text-align: center;
+    margin-right: 10px;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+}
+
+.iconMenu-divider-a {
+    background-image: url(//imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/B2CHeaderSprite.png) !important;
+    background-repeat: no-repeat;
+    background-size: 156px 240px;
+
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+
+}
+
+.child3-div-scoll {
+    display: flex;
+
+    align-items: center;
+}
+
+.child4-div-scroll-a {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.child4-div-scroll-b {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav-flex-container {
+        display: none;
+    }
+
+    .child1-container-navbar {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .logo-navlink {
+        display: inline-block;
+        height: 36px;
+        width: 113px;
+        margin-top: 20px;
+    }
+}

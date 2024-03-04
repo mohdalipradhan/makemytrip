@@ -1,0 +1,141 @@
+.flightOffer {
+    display: flex;
+
+}
+
+.parentUni {
+    display: flex;
+    justify-content: center;
+    background-color: #F2F2F2;
+}
+
+.ComponentUni {
+
+    background-color: #FFFFFF;
+    width: 1200px;
+    height: auto;
+    padding: 25px 40px 40px;
+    margin-top: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.appendBottom20 {
+    margin-bottom: 20px;
+}
+
+.makeFlex {
+    display: inline flex;
+}
+
+.blackText {
+    color: #000000;
+}
+
+.superOffersTab {
+    cursor: not-allowed;
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    align-items: center;
+    margin-left: 30px;
+    position: relative;
+}
+
+.superOffersTab::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5;
+    width: 92%;
+    height: 1px;
+    background-color: #c6c6c6;
+}
+
+.perfectCenter {
+    display: flex;
+    align-items: center;
+}
+
+.pushRight {
+    margin-left: 400px;
+    margin-top: 24px;
+}
+
+.childSuperOffer {
+    flex: 1;
+
+    display: flex;
+    gap: 30px;
+    background-color: #FFFFFF;
+    min-width: calc(33.33% - 10px);
+    color: black;
+    border: 1px solid rgb(138, 133, 133);
+    height: 200px;
+}
+
+.superOffers {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.insidechildsuperoffer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.grabOffer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: green;
+    border-radius: 5px;
+    border: 1px solid rgb(130, 117, 117);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .superOffers {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .makeFlex {
+        display: flex;
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .pushRight {
+        display: none;
+    }
+
+    #YesNoShow {
+        display: none;
+    }
+
+    .childSuperOffer {
+        flex: 1 1;
+        display: flex;
+        gap: 30px;
+        background-color: #FFFFFF;
+        min-width: calc(33.33% - 10px);
+        color: black;
+        border: 1px solid rgb(138, 133, 133);
+        height: 200px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+
+}
