@@ -8,7 +8,7 @@ import "./TrainDetails.css"
 import axios from 'axios'
 import { getHeaderWithProjectId } from '../Authenticaltion/utils/service'
 import FindMembers from '../FindMembers/FindMembers'
-import { fromStations, toStations } from '../DataCenters/TrainsNames'
+import { fromStations, toStations } from '../Modals/TrainsNames'
 
 
 
