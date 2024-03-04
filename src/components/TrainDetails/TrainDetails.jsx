@@ -8,7 +8,7 @@ import "./TrainDetails.css"
 import axios from 'axios'
 import { getHeaderWithProjectId } from '../Authenticaltion/utils/service'
 import FindMembers from '../FindMembers/FindMembers'
-import { fromStations, toStations } from '../Modals/TrainsNames'
+import { fromStations, toStations } from '../DataCenters/TrainsNames'
 
 
 
@@ -97,7 +97,7 @@ function TrainDetails() {
 
     //getCityName
 
-    function handleGetCityName(event) {
+    function handleGetCityNameFrom(event) {
         const { value } = event.target;
         let filteredSearch = fromStations.filter((data) => {
             let cityName =data.toLowerCase();
@@ -241,7 +241,7 @@ function TrainDetails() {
                             {modalInput && <modal className="modal-flight-for">
                                 <div className="modal-flight-for-input">
                                     <img className="search-icon-img" src="	https://upload.wikimedia.org/wikipedia/commons/c/ca/VisualEditor_-_Icon_-_Search.svg" alt="" />
-                                    <input onChange={handleGetCityName} type="text" placeholder="From" />
+                                    <input onChange={handleGetCityNameFrom} type="text" placeholder="From" />
                                 </div>
 
                                 <ul className="modal-flight-for-ul">
