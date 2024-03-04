@@ -4,6 +4,43 @@
   
 }
 
+.toggleInput{
+      align-items: center;
+      background: #fff;
+      border-radius: 100%;
+      box-shadow: 0 1px 30px 0 #0000001a;
+      cursor: pointer;
+      display: flex;
+      flex-shrink: 0;
+      height: 40px;
+      justify-content: center;
+      left: 100%;
+      margin-left: -22px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      z-index: 1;
+  
+}
+
+.flightSwapIcon {
+   background-position: -149px -111px;
+   height: 11px;
+   width: 15px;
+}
+
+.flightsSprite {
+   background-image: url(//imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/landingSprite@21x.webp);
+   background-repeat: no-repeat;
+   background-size: 200px 650px;
+   display: inline-block;
+   flex-shrink: 0;
+   font-size: 0;
+}
+
+
+
 .booking-details-container{
       border: 1px solid #e7e7e7;
       border-radius: 10px;
@@ -448,6 +485,11 @@
       padding: 10px;
       border-radius: 10px;
    }
+
+   .toggleInput {
+      left: 50%;
+      top: 100%;
+  }
 
    .flight-booking-details-container {
       display: flex;
