@@ -187,6 +187,17 @@ function TrainDetails() {
     }
 
 
+    const handleSwap = () => {
+        setTrainPlace((oldState)=>({
+            ...oldState,
+            from: oldState.to,
+            to: oldState.from,
+        }))
+    }
+
+    //For swapping of inputs
+
+
 
 
 
@@ -223,6 +234,10 @@ function TrainDetails() {
                                 <input onClick={() => setModalInput(!modalInput)}  className='from-div-input' type="text" readOnly id='fromCity' value={TrainPlace.from} style={{caretColor: "transparent"}}/>
                                 <span className='from-span'>India</span>
                             </label>
+
+                            <span className='toggleInput' onClick={handleSwap}>
+                                <span className='flightsSprite  flightSwapIcon '></span>
+                            </span>
                             {modalInput && <modal className="modal-flight-for">
                                 <div className="modal-flight-for-input">
                                     <img className="search-icon-img" src="	https://upload.wikimedia.org/wikipedia/commons/c/ca/VisualEditor_-_Icon_-_Search.svg" alt="" />
