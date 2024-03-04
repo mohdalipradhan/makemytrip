@@ -33,14 +33,7 @@ function TrainDetailsSingle() {
     }
     const navigate = useNavigate()
 
-    function handleButtonOnClickTrainPayment() {
-        if (!isLoggedin) {
-            setButtonState(true)
-        }else{
-            navigate(`../paymenttrain`)
-
-        }
-    }
+    
 
     const params = useParams()
     const singleIdDone = params.trainId;
@@ -63,6 +56,15 @@ function TrainDetailsSingle() {
         console.log(trainDetails, "this is train details");
     }, []);
 
+
+    function handleButtonOnClickTrainPayment() {
+        if (!isLoggedin) {
+            setButtonState(true)
+        }else{
+            navigate(`../paymenttrain`, { state: { trainsingle, coachStateType } })
+
+        }
+    }
 
     
 
