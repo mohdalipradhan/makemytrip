@@ -41,6 +41,52 @@
         font-size: 12px;
     }
 
+    .trdDetails-auth{
+        display: none;
+    }
+
+
+
+    @media only screen and (max-width: 600px) {
+        #trdDetails{
+            display: none;
+        }
+
+        #trainmobileres{
+            display: flex;
+            justify-content: center;
+        }
+
+        #trdDetailsabc{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .trdDetails-auth{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+      }
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
