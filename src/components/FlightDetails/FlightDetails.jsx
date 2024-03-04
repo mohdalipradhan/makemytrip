@@ -13,7 +13,7 @@ import { idText } from 'typescript'
 
 
 function FlightDetails() {
-    const initialDate = new Date('Wed Nov 15 2023 00:00:00 GMT+0530');
+    const initialDate = new Date();
     const [TravelDate, setTravelDate] = useState(initialDate);
     const [trthly, setTrthly] = useState(true);
     const [MemberValue, setMemberValue] = useState({
