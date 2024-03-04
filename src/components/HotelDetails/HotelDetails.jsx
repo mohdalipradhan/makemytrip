@@ -35,8 +35,8 @@ function HotelDetails() {
 
     const [MemberValue, setMemberValue] = useState()
 
-    const checkInValue = new Date('Wed Nov 15 2023 00:00:00 GMT+0530');
-    const checkOutValue = new Date('Thu Nov 17 2023 00:00:00 GMT+0530')
+    const checkInValue = new Date();
+    const checkOutValue = new Date()
 
     const [checkInDate, SetcheckInDate] = useState(checkInValue)
     const [checkOutDate, SetCheckOutDate] = useState(checkOutValue)  
