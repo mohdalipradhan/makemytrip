@@ -3,9 +3,13 @@ import "./ModalTrainTest"
 import { createPortal } from 'react-dom'
 import { trainModalTestContext } from '../../App';
 
-function ModalTrainTest() {
+function ModalTrainTest(props) {
 
     const { modalTrain, setModalTrain } = useContext(trainModalTestContext);
+
+    const {location} = props;
+
+    console.log(location);
 
     function handleOverlay(event) {
         if (event.target === event.currentTarget) {
@@ -17,12 +21,9 @@ function ModalTrainTest() {
         <div className='booking-confirmed-modal-Parent' onClick={handleOverlay}>
             <div className="modal-content" >
                 <h2>Booking Successful!</h2>
-                <p>Your Train from from to To has been booked.</p>
-                <p>Flight ID Carry It: 1244324234234 </p>
-                <p>Departure Time: 348923783724</p>
-                <p>Arrival Time: 8234782374</p>
-                <p>Amenities: something</p>
-                <p>Price: INR something</p>
+                <p>Your Train from {location?.state?.trainsingle?.source} to {location?.state?.trainsingle?.destination} has been booked.</p>
+                <p>Ticket ID Carry It: {location?.state?.trainsingle?.trainNumber} </p>
+              
             </div>
         </div>,
         document.querySelector(".modalTrainTest")
