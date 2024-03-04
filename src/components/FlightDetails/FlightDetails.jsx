@@ -152,6 +152,14 @@ function FlightDetails() {
     console.log(year, month, day, dayWeek, monthWord);
 
 
+    const handleSwap = () => {
+        setFlightDetails((oldState)=>({
+            ...oldState,
+            from: oldState.to,
+            to: oldState.from,
+        }))
+    }
+
 
     return (
         <>
@@ -186,6 +194,9 @@ function FlightDetails() {
                                 <input onClick={() => setModalInput(!modalInput)}  className='from-div-input' type="text" readOnly id='fromCity' value={flightDetails.from} style={{caretColor: "transparent"}}/>
                                 <span className='from-span'>India</span>
                             </label>
+                            <span className='toggleInput' onClick={handleSwap}>
+                                <span className='flightsSprite  flightSwapIcon '></span>
+                            </span>
                             {modalInput && <modal className="modal-flight-for">
                                 <div className="modal-flight-for-input">
                                     <img className="search-icon-img" src="	https://upload.wikimedia.org/wikipedia/commons/c/ca/VisualEditor_-_Icon_-_Search.svg" alt="" />
@@ -281,6 +292,7 @@ function FlightDetails() {
                         </div>
 
                     </section>
+
 
                 
                 <div className="searchBtnforhotel" >
